@@ -14,7 +14,7 @@ document.getElementById('formulario').addEventListener('submit', function(evento
     }
 
     // Validación de la contraseña
-    const campoContraseña = document.getElementById('contrasena');
+    const campoContraseña = document.getElementById('contraseña');
     const errorContraseña = document.getElementById('errorContraseña');
     if (campoContraseña.value.length < 8) {
         errorContraseña.textContent = "La contraseña debe tener al menos 8 caracteres.";
