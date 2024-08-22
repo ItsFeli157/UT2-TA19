@@ -14,13 +14,13 @@ document.getElementById('formulario').addEventListener('submit', function(evento
     }
 
     // Validación de la contraseña
-    const campoContrasena = document.getElementById('contrasena');
-    const errorContrasena = document.getElementById('errorContrasena');
-    if (campoContrasena.value.length < 8) {
-        errorContrasena.textContent = "La contraseña debe tener al menos 8 caracteres.";
+    const campoContraseña = document.getElementById('contrasena');
+    const errorContraseña = document.getElementById('errorContraseña');
+    if (campoContraseña.value.length < 8) {
+        errorContraseña.textContent = "La contraseña debe tener al menos 8 caracteres.";
         esValido = false;
     } else {
-        errorContrasena.textContent = "";
+        errorContraseña.textContent = "";
     }
 
     // Validación del correo electrónico
@@ -28,7 +28,7 @@ document.getElementById('formulario').addEventListener('submit', function(evento
     const errorCorreo = document.getElementById('errorCorreo');
     const patronCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!patronCorreo.test(campoCorreo.value)) {
-        errorCorreo.textContent = "El correo electrónico no es válido.";
+        errorCorreo.textContent = "El correo electronico no es valido.";
         esValido = false;
     } else {
         errorCorreo.textContent = "";
@@ -50,12 +50,12 @@ document.getElementById('nombre').addEventListener('input', function() {
     }
 });
 
-document.getElementById('contrasena').addEventListener('input', function() {
-    const errorContrasena = document.getElementById('errorContrasena');
+document.getElementById('contraseña').addEventListener('input', function() {
+    const errorContraseña = document.getElementById('errorContraseña');
     if (this.value.length < 8) {
-        errorContrasena.textContent = "La contraseña debe tener al menos 8 caracteres.";
+        errorContraseña.textContent = "La contraseña debe tener al menos 8 caracteres.";
     } else {
-        errorContrasena.textContent = "";
+        errorContraseña.textContent = "";
     }
 });
 
@@ -63,7 +63,7 @@ document.getElementById('correo').addEventListener('input', function() {
     const errorCorreo = document.getElementById('errorCorreo');
     const patronCorreo = /^[^\s@]+@[^\s@]+\.(com|org|net|edu)$/;
     if (!patronCorreo.test(this.value)) {
-        errorCorreo.textContent = "El correo electrónico no es válido.";
+        errorCorreo.textContent = "El correo electronico no es valido.";
     } else {
         errorCorreo.textContent = "";
     }
